@@ -1,5 +1,5 @@
 import React from "react";
-import Todo from "../@types/todo";
+import "../style/todoSection.css";
 
 interface TodoProps {
   removeTodo: (id: number) => void;
@@ -25,7 +25,7 @@ function TodoSection({
         {content}
       </span>
       <span className="todo-remove-btn" onClick={() => removeTodo(id)}>
-        {"❌"}
+        X
       </span>
     </div>
   );

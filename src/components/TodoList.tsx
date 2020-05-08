@@ -1,6 +1,7 @@
 import React from "react";
 import Todo from "../@types/todo";
 import TodoSection from "./TodoSection";
+import "../style/todoList.css";
 
 interface TodoListProps {
   removeTodo: (id: number) => void;

@@ -1,0 +1,13 @@
+.todo-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-form-input {
+  width: 80%;
+}
+
+.todo-form-btn {
+  font-size: 12px;
+  padding: 0 3px;
+}

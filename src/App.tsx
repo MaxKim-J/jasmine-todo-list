@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import TodoTitle from "./components/TodoTitle";
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
-
 import Todo from "./@types/todo";
+import "./style/app.css";
 
 function App() {
   const [todos, setTodos] = useState<Todo[]>([]);
@@ -32,9 +32,8 @@ function App() {
     setTodos(newTodos);
   };
 
-  console.log(todos);
   return (
-    <div className="App">
+    <div className="app">
       <TodoTitle />
       <TodoForm addTodo={addTodo} />
       <TodoList todos={todos} removeTodo={removeTodo} checkTodo={checkTodo} />

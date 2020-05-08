@@ -1,0 +1,22 @@
+.todo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.todo-content {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.todo-checked {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.todo-remove-btn {
+  color: red;
+  cursor: pointer;
+}
