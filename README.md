@@ -12,3 +12,7 @@
 5. TodoList 컴포넌트 만들기 
 6. TodoSection 컴포넌트 만들고 TodoList 컴포넌트 완성하기 + todo 삭제, 체크 함수 처리
 7. 스타일(CSS) 적용하기
+
+## stack
+
+- React.js(CRA) + Typescript
