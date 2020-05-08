@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import TodoTitle from "./components/TodoTitle";
 import TodoForm from "./components/TodoForm";
+import TodoList from "./components/TodoList";
+
 import Todo from "./@types/todo";
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
     <div className="App">
       <TodoTitle />
       <TodoForm addTodo={addTodo} />
+      <TodoList todos={todos} removeTodo={removeTodo} checkTodo={checkTodo} />
     </div>
   );
 }
