@@ -6,9 +6,9 @@
 ## commit
 
 1. initial Commit - 필요없는거 제거
-2. AppLayout 컴포넌트 구현
-3. AppLayout 컴포넌트에서 전역 데이터, 함수 구현
-4. TodoForm 컴포넌트 만들기
-5. TodoList 컴포넌트 만들기
-6. Todo 컴포넌트 만들고 기능 구현하기
+2. TodoTitle 컴포넌트 구현
+3. App 컴포넌트에서 전역 데이터, 함수 구현
+4. TodoForm 컴포넌트 만들기 + todo 생성 함수 처리
+5. TodoList 컴포넌트 만들기 
+6. Todo 컴포넌트 만들기 + todo 체크, 삭제함수 처리
 7. 스타일(CSS) 적용하기
