@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import TodoTitle from "./components/TodoTitle";
+import TodoForm from "./components/TodoForm";
 import Todo from "./@types/todo";
 
 function App() {
   const [todos, setTodos] = useState<Todo[]>([]);
 
-  const addTodo = (content: string) => {
+  const addTodo = (content: string): void => {
     const newTodo: Todo = {
       id: todos.length,
       content: content,
@@ -14,12 +15,12 @@ function App() {
     setTodos([...todos, newTodo]);
   };
 
-  const removeTodo = (id: number) => {
+  const removeTodo = (id: number): void => {
     const newTodos: Todo[] = todos.filter((todo) => todo.id !== id);
     setTodos(newTodos);
   };
 
-  const checkTodo = (id: number) => {
+  const checkTodo = (id: number): void => {
     const newTodos = [...todos];
     newTodos.forEach((todo) => {
       if (todo.id === id) {
@@ -29,9 +30,11 @@ function App() {
     setTodos(newTodos);
   };
 
+  console.log(todos);
   return (
     <div className="App">
       <TodoTitle />
+      <TodoForm addTodo={addTodo} />
     </div>
   );
 }
