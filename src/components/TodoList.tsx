@@ -1,5 +1,6 @@
 import React from "react";
 import Todo from "../@types/todo";
+import TodoSection from "./TodoSection";
 
 interface TodoListProps {
   removeTodo: (id: number) => void;
@@ -8,7 +9,20 @@ interface TodoListProps {
 }
 
 function TodoList({ todos, checkTodo, removeTodo }: TodoListProps) {
-  return <div className="todo-list">투두리스트 리스트</div>;
+  return (
+    <div className="todo-list">
+      {todos.map((todo) => (
+        <TodoSection
+          key={todo.id}
+          removeTodo={removeTodo}
+          checkTodo={checkTodo}
+          id={todo.id}
+          content={todo.content}
+          isChecked={todo.isChecked}
+        />
+      ))}
+    </div>
+  );
 }
 
 export default TodoList;

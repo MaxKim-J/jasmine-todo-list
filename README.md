@@ -10,5 +10,5 @@
 3. App 컴포넌트에서 전역 데이터, 함수 구현
 4. TodoForm 컴포넌트 만들기 + todo 생성 함수 처리
 5. TodoList 컴포넌트 만들기 
-6. Todo 컴포넌트 만들기 + todo 체크, 삭제함수 처리
+6. TodoSection 컴포넌트 만들고 TodoList 컴포넌트 완성하기 + todo 삭제, 체크 함수 처리
 7. 스타일(CSS) 적용하기
